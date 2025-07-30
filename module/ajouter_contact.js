@@ -2,7 +2,7 @@ export function générerFormulaire(contacts) {
   // création de la section formulaire
   const sectionFormulaire = document.createElement("section");
   // placer cette section dans le body
-  document.body.appendChild(sectionFormulaire);
+  document.querySelector("main").appendChild(sectionFormulaire);
 
   //   création formulaire
   const formulaire = document.createElement("form");
