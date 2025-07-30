@@ -69,3 +69,11 @@ li {
   font-size: 1.5rem;
   color: white;
 }
+
+.nombreContact {
+  background-color: rgb(72, 157, 236);
+  height: 80%;
+  width: 50vh;
+  margin-top: 20px;
+  border-radius: 20px;
+}
