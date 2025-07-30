@@ -1,5 +1,6 @@
 import { générerFormulaire } from "./ajouter_contact.js";
 import { afficherListeContacts } from "./liste_contact.js";
+import { afficherMessageUtilisateur } from "./nombre_contact.js";
 import { contacts } from "../main.js";
 
 export const genererStructure = function () {
@@ -39,7 +40,7 @@ export const genererStructure = function () {
         break;
       case "count_contact":
         wipeMain();
-        console.log("count_contacteeee");
+        afficherMessageUtilisateur(contacts);
     }
   });
 

@@ -68,9 +68,11 @@ export function générerFormulaire(contacts) {
   bouttonEnvoi.addEventListener("click", function (event) {
     event.preventDefault();
     const contact = {
-      nom: inputNom.value ?? "Nom par défaut",
-      prenom: inputPrenom.value ?? "Prénom par défaut",
-      numero: inputNumero.value ?? "Numéro par défaut",
+      nom: inputNom.value === "" ? "Nom par défaut" : inputNom.value,
+      prenom:
+        inputPrenom.value === "" ? "Prenom par défaut" : inputPrenom.value,
+      numero:
+        inputNumero.value === "" ? "Numero par défaut" : inputNumero.value,
     };
 
     contacts.push(contact);
