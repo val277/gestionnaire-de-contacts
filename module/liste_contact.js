@@ -4,17 +4,9 @@ Parcourir la liste
 Créer un element avec chaque paramètre de chaque objet en textContent
 */
 
-const contacts = [
-  { nom: "Aymare", prenom: "Jean", numero: "0685456523" },
-  { nom: "Ricault", prenom: "Léa", numero: "0645659752" },
-  { nom: "Zeteaufré", prenom: "Jean", numero: "0685456523" },
-];
-console.log(contacts);
-
 export function afficherListeContacts(contacts) {
   const section = document.createElement("section"); //ici je crée ma section
-  section.classList.add("container-parent");
-  document.body.appendChild(section);
+  document.querySelector("main").appendChild(section);
 
   const ul = document.createElement("ul"); //ici je crée ma liste de contacts
   section.appendChild(ul);
