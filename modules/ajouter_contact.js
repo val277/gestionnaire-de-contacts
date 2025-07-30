@@ -67,12 +67,15 @@ export function générerFormulaire(contacts) {
 
   bouttonEnvoi.addEventListener("click", function (event) {
     event.preventDefault();
-    const contact = {};
-    contact.nom = inputNom.value;
-    contact.prenom = inputPrenom.value;
-    contact.numero = inputNumero.value;
+    const contact = {
+      nom: inputNom.value ?? "Nom par défaut",
+      prenom: inputPrenom.value ?? "Prénom par défaut",
+      numero: inputNumero.value ?? "Numéro par défaut",
+    };
 
     contacts.push(contact);
+
+    alert("CONTACT CRÉE!");
     console.log(contact);
   });
 }
