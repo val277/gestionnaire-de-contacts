@@ -1,3 +1,7 @@
+import { générerFormulaire } from "./ajouter_contact.js";
+import { afficherListeContacts } from "./liste_contact.js";
+import { contacts } from "../main.js";
+
 export const genererStructure = function () {
   // Création du header
   const header = document.createElement("header");
@@ -27,11 +31,11 @@ export const genererStructure = function () {
         break;
       case "list_contact":
         wipeMain();
-        console.log("listeeee");
+        afficherListeContacts(contacts);
         break;
       case "add_contact":
         wipeMain();
-        console.log("add_contacteeee");
+        générerFormulaire(contacts);
         break;
       case "count_contact":
         wipeMain();
