@@ -13,9 +13,19 @@ export function listeContacts(contacts) {
   // li.textContent = `Nom: ${contacts.nom}, Prénom: ${contacts.prenom}, Numéro: ${contacts.numero}`;
   // ul.appendChild(li);
 
-  contacts.forEach((element) => {
+  contacts.forEach((element, index) => {
     const li = document.createElement("li");
     li.textContent = `Nom: ${element.nom}, Prénom: ${element.prenom}, Numéro: ${element.numero}`;
+
+    const btn = document.createElement("button");
+    btn.textContent = "✖️";
+    btn.addEventListener("click", () => {
+      li.remove();
+      contacts.splice(index, 1);
+      alert("CONTACT SUPPRIMÉ!");
+    });
+    li.appendChild(btn);
+
     ul.appendChild(li);
   });
 }
