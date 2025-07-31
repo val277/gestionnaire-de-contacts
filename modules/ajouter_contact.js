@@ -1,4 +1,4 @@
-export function générerFormulaire(contacts) {
+export function ajouterContact(contacts) {
   // création de la section formulaire
   const sectionFormulaire = document.createElement("section");
   // placer cette section dans le body

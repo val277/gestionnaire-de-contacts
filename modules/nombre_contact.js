@@ -1,4 +1,4 @@
-export function afficherMessageUtilisateur(contacts) {
+export function nombreContact(contacts) {
   const section = document.createElement("section");
   section.classList.add("nombreContact");
   // Créer un paragraphe <p>
