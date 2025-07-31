@@ -71,6 +71,16 @@ input[type="submit"]:hover {
   transition: 0.3s;
 }
 
+button {
+  border-radius: 80px;
+  border: none;
+  margin-left: 1rem;
+  &:hover {
+    background-color: red;
+    transition: 0.3s;
+  }
+}
+
 ul {
   height: 80%;
   background-color: rgb(72, 157, 236);
@@ -86,6 +96,8 @@ li {
   font-size: 1.2rem;
   list-style-type: none;
   color: white;
+  display: flex;
+  align-items: center;
 }
 
 .nombreContact p {
