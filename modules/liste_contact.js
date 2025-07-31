@@ -4,7 +4,7 @@ Parcourir la liste
 Créer un element avec chaque paramètre de chaque objet en textContent
 */
 
-export function afficherListeContacts(contacts) {
+export function listeContacts(contacts) {
   const section = document.createElement("section"); //ici je crée ma section
   document.querySelector("main").appendChild(section);
 
