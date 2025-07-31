@@ -1,4 +1,10 @@
-export function afficherListeContacts(contacts) {
+/*consignes : 
+Pour chaque objet dans notre liste tu rajoutes un élément dans le html:
+Parcourir la liste
+Créer un element avec chaque paramètre de chaque objet en textContent
+*/
+
+export function listeContacts(contacts) {
   //export de la fonction réutilisée dans le main.js
   const section = document.createElement("section"); //création de la section dans le HTML
   document.querySelector("main").appendChild(section); //insertion de la section dans la balise <main> du document
